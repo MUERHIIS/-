@@ -55,6 +55,17 @@ src/
 点击当前作品（图片或视频）会打开全屏查看；点击轨道上排在后方的作品会平滑跳转
 到该作品。移动端（< 900px）自动切换为普通纵向列表。
 
+## 部署到 Cloudflare Pages
+
+- 构建命令：`CI=true pnpm install && CI=true pnpm build`
+- 输出目录：`dist`
+- Node 版本：18 及以上（如 Cloudflare 报 Node 版本过低，在环境变量里设置
+  `NODE_VERSION=20` 或 22）
+
+注意：Cloudflare Pages 单文件上限为 25 MiB。`public/works/` 里的视频已按此限制
+压缩，任何新增视频请控制在该范围内（或改用外部视频托管）。`public/_redirects`
+已配置 SPA 回退，直接访问子路径也会正常渲染首页。
+
 ## 如何替换成真实素材
 
 ### 作品图
