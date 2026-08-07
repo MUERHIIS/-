@@ -56,9 +56,9 @@ export default function Navbar() {
       <div className="nav-progress" style={{ transform: `scaleX(${progress})` }} />
       <div className="container nav-inner">
         <a className="nav-logo" href="#top">
-          <span className="nav-logo-mark">MZ</span>
+          <span className="nav-logo-mark">MW</span>
           <span className="nav-logo-text">
-            马正阳
+            MUERHIIS的WEB
             <em className="mono">VISUAL DESIGN</em>
           </span>
         </a>

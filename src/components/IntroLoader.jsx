@@ -11,7 +11,10 @@ export default function IntroLoader({ onDone }) {
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    const duration = 2050;
+    const mobile = window.innerWidth < 768;
+    const duration = mobile ? 900 : 2050;
+    const hold = mobile ? 200 : 320;
+    const fade = mobile ? 600 : 900;
     const start = performance.now();
     let raf = 0;
     let timers = [];
@@ -24,8 +27,8 @@ export default function IntroLoader({ onDone }) {
         raf = requestAnimationFrame(tick);
       } else {
         timers.push(
-          setTimeout(() => setFading(true), 320),
-          setTimeout(() => onDoneRef.current(), 320 + 900)
+          setTimeout(() => setFading(true), hold),
+          setTimeout(() => onDoneRef.current(), hold + fade)
         );
       }
     };
@@ -50,7 +53,7 @@ export default function IntroLoader({ onDone }) {
           <line className="m-line m-line-4" pathLength="1" x1="162" y1="44" x2="162" y2="156" />
         </svg>
 
-        <h1 className="intro-word">MAZHENGYANG</h1>
+        <h1 className="intro-word">MUERHIIS</h1>
         <p className="intro-caption mono">VISUAL DESIGN · POST-PRODUCTION</p>
       </div>
 

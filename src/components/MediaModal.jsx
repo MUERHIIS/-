@@ -19,6 +19,7 @@ export default function MediaModal({ work, onClose }) {
         {work.video ? (
           <video
             src={work.video}
+            preload="metadata"
             controls
             autoPlay
             playsInline

@@ -32,7 +32,7 @@ export default function About() {
               </h2>
             </div>
             <p className="sec-head-note">
-              你好，我是马正阳。
+              你好，我是 MUERHIIS。
               <br />
               用技术与审美，把好故事做成好影像。
             </p>
@@ -44,7 +44,7 @@ export default function About() {
             <Reveal>
               <h3 className="about-name">
                 {profile.name}
-                <span className="mono about-en">MA ZHENGYANG</span>
+                <span className="mono about-en">MUERHIIS · WEB</span>
               </h3>
               <p className="about-title">{profile.title}</p>
               {profile.bio.map((p, i) => (

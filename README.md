@@ -17,7 +17,7 @@ pnpm dev
 src/
   data.js            # 简历数据（经历 / 项目 / 技能，改内容优先改这里）
   components/
-    IntroLoader.jsx  # 开场动画：线条汇聚成 M + 进度条 + MAZHENGYANG 字标
+    IntroLoader.jsx  # 开场动画：线条汇聚成 M + 进度条 + MUERHIIS 字标
     Navbar.jsx       # 顶部导航 + 滚动进度
     Hero.jsx         # 全屏 Hero（动态背景）
     HeroCanvas.jsx   # 生成式动态背景（Canvas）

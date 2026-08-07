@@ -2,7 +2,7 @@ import HeroCanvas from "./HeroCanvas";
 import { ArrowUpRight, ChevronDown } from "./Icons";
 import { stats } from "../data";
 
-const letters = "MAZHENGYANG".split("");
+const letters = "MUERHIIS".split("");
 
 export default function Hero({ ready = false }) {
   return (
@@ -16,7 +16,7 @@ export default function Hero({ ready = false }) {
             PORTFOLIO <i /> VISUAL DESIGN <i /> POST-PRODUCTION
           </p>
 
-          <h1 className="hero-name" aria-label="MAZHENGYANG">
+          <h1 className="hero-name" aria-label="MUERHIIS">
             {letters.map((ch, i) => (
               <span key={i}>{ch}</span>
             ))}
@@ -25,7 +25,7 @@ export default function Hero({ ready = false }) {
           <div className="hero-name-line" aria-hidden="true" />
 
           <div className="hero-subrow hero-fade">
-            <span className="hero-sub-name">马正阳</span>
+            <span className="hero-sub-name">MUERHIIS</span>
             <i className="hero-sub-sep" aria-hidden="true" />
             <span className="hero-sub-title">后期制作（动效包装）· 视觉设计</span>
           </div>
