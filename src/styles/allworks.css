@@ -315,8 +315,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 10px;
-  letter-spacing: 0.28em;
+  font-size: 13px;
+  letter-spacing: 0.18em;
   color: var(--accent);
 }
 
@@ -337,29 +337,29 @@
 .allworks-desc-sub {
   margin-top: 8px;
   color: var(--text-2);
-  font-size: 14.5px;
-  letter-spacing: 0.1em;
+  font-size: 17px;
+  letter-spacing: 0.08em;
 }
 
 .allworks-desc-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   margin-top: 18px;
 }
 
 .allworks-desc-tags span {
-  font-size: 10.5px;
-  letter-spacing: 0.18em;
+  font-size: 28px;
+  letter-spacing: 0.06em;
   color: var(--text-3);
   border: 1px solid var(--line);
-  padding: 5px 10px;
+  padding: 10px 18px;
 }
 
 .allworks-desc-icon {
-  height: 20px;
+  height: 48px;
   width: auto;
-  margin-left: 2px;
+  margin-left: 6px;
 }
 
 .allworks-footer {

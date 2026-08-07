@@ -474,7 +474,10 @@
 
 .work-media {
   position: relative;
-  aspect-ratio: 16 / 8.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
   overflow: hidden;
   border: 1px solid var(--line);
   background: #0a0a10;
@@ -489,16 +492,32 @@
   transform: scale(1.015);
 }
 
-.work-card--featured .work-media {
-  aspect-ratio: 16 / 7.4;
+.work-img {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.work-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.work-card--featured .work-img,
+.work-card--featured .work-media video {
+  max-height: 76vh;
+}
+
+.work-media video {
   display: block;
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+}
+
+.work-media .art {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .work-card:hover .work-img,
@@ -736,15 +755,17 @@
 }
 
 .work-tags span {
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 28px;
+  letter-spacing: 0.06em;
   color: var(--text-3);
+  border: 1px solid var(--line);
+  padding: 10px 18px;
 }
 
 .work-icon {
-  height: 18px;
+  height: 48px;
   width: auto;
-  margin-left: 2px;
+  margin-left: 6px;
 }
 
 .works-grid {

@@ -231,7 +231,7 @@ export const allWorks = [
     tags: ["After Effects", "动画", "卡点剪辑"],
     image: "/works/posters/ae-dongman-pv.webp",
     video: "/works/videos/ae-dongman-pv.mp4",
-    ratio: { w: 16, h: 9 },
+    ratio: { w: 35, h: 18 },
   },
   {
     id: "ae-yinqiu",
