@@ -91,7 +91,7 @@ export const works = [
     desc: "使用 After Effects 完成动效设计与后期合成，围绕《明日方舟：终末地》世界观创作的游戏同人短片，节奏卡点与视觉冲击并重。",
     tags: ["After Effects", "游戏二创", "动效"],
     image: "/works/posters/ae-zhongmodi.webp",
-    video: "/works/videos/ae-zhongmodi.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1Nbub6JEkc&page=1",
     ratio: { w: 16, h: 9 },
     featured: true,
   },
@@ -120,7 +120,7 @@ export const works = [
     desc: "对应简历中的胤秋商用模板项目：VideoCopilot Element 建模渲染羊皮卷轴 3D 动画，分形杂色模拟水墨晕染效果。",
     tags: ["After Effects", "Element 3D", "水墨"],
     image: "/works/posters/ae-yinqiu.webp",
-    video: "/works/videos/ae-yinqiu.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEWT&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -135,7 +135,7 @@ export const works = [
     desc: "对应简历中的浙江广电实习：参与“文明探源·和合共生”文化交流项目，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/posters/clip-zglgj-1.webp",
-    video: "/works/videos/clip-zglgj-1.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1w9ut6VEpM&page=1",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -150,7 +150,7 @@ export const works = [
     desc: "湖州安吉横山坞宣传片，负责从拍摄到成片的全流程制作。",
     tags: ["拍摄", "Premiere", "宣传片"],
     image: "/works/posters/clip-hengshanwu.webp",
-    video: "/works/videos/clip-hengshanwu.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6VEYq&page=1",
     ratio: { w: 16, h: 9 },
   },
 ];
@@ -168,7 +168,7 @@ export const allWorks = [
     desc: "使用 After Effects 完成动效设计与后期合成，围绕《终末地》世界观创作的游戏同人短片。",
     tags: ["After Effects", "游戏二创", "动效"],
     image: "/works/posters/ae-zhongmodi.webp",
-    video: "/works/videos/ae-zhongmodi.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1Nbub6JEkc&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -230,7 +230,7 @@ export const allWorks = [
     desc: "AE 动画节奏练习：镜头转场、音乐卡点与动效包装的 PV 风格短片。",
     tags: ["After Effects", "动画", "卡点剪辑"],
     image: "/works/posters/ae-dongman-pv.webp",
-    video: "/works/videos/ae-dongman-pv.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1sbub6EE7n&page=1",
     ratio: { w: 35, h: 18 },
   },
   {
@@ -244,7 +244,7 @@ export const allWorks = [
     desc: "对应简历中的胤秋商用模板项目：3D 羊皮卷轴动画 + 分形杂色水墨晕染。",
     tags: ["After Effects", "Element 3D", "水墨"],
     image: "/works/posters/ae-yinqiu.webp",
-    video: "/works/videos/ae-yinqiu.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEWT&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -258,7 +258,7 @@ export const allWorks = [
     desc: "微电影《雪融之时》宣传片，负责动效包装与后期剪辑。",
     tags: ["After Effects", "宣传片", "包装"],
     image: "/works/posters/ae-xuerong.webp",
-    video: "/works/videos/ae-xuerong.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SExJ&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -272,7 +272,7 @@ export const allWorks = [
     desc: "C5 大神电竞杭州高校赛宣传片，负责动效设计与成片剪辑。",
     tags: ["After Effects", "电竞", "宣传片"],
     image: "/works/posters/ae-c5-dianjing.webp",
-    video: "/works/videos/ae-c5-dianjing.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEs5&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -310,7 +310,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/posters/clip-zglgj-1.webp",
-    video: "/works/videos/clip-zglgj-1.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1w9ut6VEpM&page=1",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -324,7 +324,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/posters/clip-zglgj-2.webp",
-    video: "/works/videos/clip-zglgj-2.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1zZut6zEB5&page=1",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -338,7 +338,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/posters/clip-zglgj-3.webp",
-    video: "/works/videos/clip-zglgj-3.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1JZut66EvS&page=1",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -352,7 +352,7 @@ export const allWorks = [
     desc: "湖州安吉横山坞宣传片，负责从拍摄到成片的全流程制作。",
     tags: ["拍摄", "Premiere", "宣传片"],
     image: "/works/posters/clip-hengshanwu.webp",
-    video: "/works/videos/clip-hengshanwu.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6VEYq&page=1",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -366,7 +366,7 @@ export const allWorks = [
     desc: "绍兴八字桥人物采访，负责采访拍摄与成片剪辑。",
     tags: ["拍摄", "Premiere", "采访"],
     image: "/works/posters/clip-baziqiao.webp",
-    video: "/works/videos/clip-baziqiao.mp4",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6GET2&page=1",
     ratio: { w: 16, h: 9 },
   },
 ];

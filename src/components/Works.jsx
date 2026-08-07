@@ -34,7 +34,7 @@ function WorkCard({ work, featured = false, onOpen }) {
           ) : (
             <Art kind={work.art} />
           )}
-          {work.video && (
+          {(work.bilibili || work.video) && (
             <span className="work-play" aria-hidden="true">
               ▶
             </span>

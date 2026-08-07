@@ -192,6 +192,19 @@
   display: block;
 }
 
+.allworks-card-frame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  border: 0;
+  background: #000;
+}
+
 .allworks-sound {
   position: absolute;
   right: 14px;

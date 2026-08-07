@@ -3,7 +3,6 @@ import Art from "./Art";
 import { ArrowUpRight } from "./Icons";
 import { allWorks, workCategories } from "../data";
 import MediaModal from "./MediaModal";
-import { getVideoSrc } from "../lib/video";
 import { getWorkIcons, iconSrc } from "../lib/icons";
 
 const smoothstep = (a, b, x) => {
@@ -91,7 +90,9 @@ export default function AllWorks() {
       if (frontFocus > 0.85 && lastPlay !== idx) {
         lastPlay = idx;
         setMuted(true);
-        setPlaying(works[idx].video ? works[idx].id : null);
+        const w = works[idx];
+        const landscape = w.ratio && w.ratio.w / w.ratio.h >= 1.4;
+        setPlaying(w.bilibili && landscape ? w.id : null);
       } else if (frontFocus < 0.4 && lastPlay === idx) {
         lastPlay = -1;
         setPlaying(null);
@@ -219,10 +220,18 @@ export default function AllWorks() {
                   aspectRatio: `${w.ratio.w} / ${w.ratio.h}`,
                 }}
               >
-                {playing === w.id && w.video ? (
+                {playing === w.id && w.bilibili ? (
+                  <iframe
+                    className="allworks-card-frame"
+                    src={`${w.bilibili}&autoplay=1`}
+                    title={w.title}
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
+                ) : playing === w.id && w.video ? (
                   <video
                     className="allworks-card-video"
-                    src={getVideoSrc(w)}
+                    src={w.video}
                     poster={w.image}
                     autoPlay
                     muted={muted}
@@ -240,14 +249,14 @@ export default function AllWorks() {
                 ) : (
                   <Art kind={w.art} />
                 )}
-                {w.video && (
+                {(w.bilibili || w.video) && (
                   <>
                     {playing !== w.id && (
                       <span className="allworks-play" aria-hidden="true">
                         ▶
                       </span>
                     )}
-                    {playing === w.id && (
+                    {playing === w.id && w.video && (
                       <button
                         className="allworks-sound mono"
                         onClick={(e) => {
@@ -365,7 +374,7 @@ export default function AllWorks() {
                 ) : (
                   <Art kind={w.art} />
                 )}
-                {w.video && (
+                {(w.bilibili || w.video) && (
                   <span className="allworks-play" aria-hidden="true">
                     ▶
                   </span>

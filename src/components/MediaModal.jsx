@@ -1,9 +1,6 @@
 import { useEffect } from "react";
-import { getVideoSrc } from "../lib/video";
 
 export default function MediaModal({ work, onClose }) {
-  const src = work.video ? getVideoSrc(work) : null;
-
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
@@ -19,9 +16,19 @@ export default function MediaModal({ work, onClose }) {
   return (
     <div className="video-modal" onClick={onClose} role="dialog" aria-modal="true">
       <div className="video-modal-inner" onClick={(e) => e.stopPropagation()}>
-        {work.video ? (
+        {work.bilibili ? (
+          <div className="bilibili-wrap">
+            <iframe
+              className="bilibili-frame"
+              src={work.bilibili}
+              title={work.title}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        ) : work.video ? (
           <video
-            src={src}
+            src={work.video}
             preload="metadata"
             controls
             autoPlay

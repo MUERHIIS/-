@@ -38,12 +38,16 @@ src/
 
 - `images/` —— 平面设计作品原图
 - `posters/` —— 视频作品的封面帧
-- `videos/` —— 视频作品（已压缩为网页播放版本，原始文件在 `D:\桌面\作品`）
 
-作品顺序与介绍在 `src/data.js` 的 `allWorks`（全部作品，17 件）、`works`
+作品顺序与介绍在 `src/data.js` 的 `allWorks`（全部作品，16 件）、`works`
 （精选，5 件）与 `workCategories`（四类分组）中维护。新增作品时：把素材放入
 `public/works/` 对应目录，在数组里追加一条记录（视频作品需提供 `image` 封面与
-`video` 路径），并按分类把 `id` 加进 `workCategories` 对应分组。
+`bilibili` 嵌入地址），并按分类把 `id` 加进 `workCategories` 对应分组。
+
+视频作品统一使用 B 站播放器嵌入（`bilibili` 字段，格式
+`//player.bilibili.com/player.html?bvid=BVxxxx&page=1`），大陆网络可流畅播放。
+新增视频：投稿到 B 站并开启「允许他人嵌入播放器」后，把嵌入地址填入对应作品的
+`bilibili` 字段即可；本地不存放视频文件，部署体积约 3MB。
 
 全部作品板块参考 alche.studio 的 WORK 实现：所有作品预览随滚动沿倾斜椭圆路径
 连续运动，当前作品从右下角进入画面中央放大聚焦，左下角同步切换描述；视频作品
@@ -62,9 +66,7 @@ src/
 - Node 版本：18 及以上（如 Cloudflare 报 Node 版本过低，在环境变量里设置
   `NODE_VERSION=20` 或 22）
 
-注意：Cloudflare Pages 单文件上限为 25 MiB。`public/works/` 里的视频已按此限制
-压缩，任何新增视频请控制在该范围内（或改用外部视频托管）。`public/_redirects`
-已配置 SPA 回退，直接访问子路径也会正常渲染首页。
+`public/_redirects` 已配置 SPA 回退，直接访问子路径也会正常渲染首页。
 
 ## 如何替换成真实素材
 
