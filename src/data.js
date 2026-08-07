@@ -88,7 +88,7 @@ export const works = [
     role: "剪辑 / 合成",
     duration: "00:14",
     metrics: ["片长 00:14", "AE 合成", "游戏同人"],
-    desc: "使用 After Effects 完成动效设计与后期合成，围绕《终末地》世界观创作的游戏同人短片，节奏卡点与视觉冲击并重。",
+    desc: "使用 After Effects 完成动效设计与后期合成，围绕《明日方舟：终末地》世界观创作的游戏同人短片，节奏卡点与视觉冲击并重。",
     tags: ["After Effects", "游戏二创", "动效"],
     image: "/works/posters/ae-zhongmodi.webp",
     video: "/works/videos/ae-zhongmodi.mp4",

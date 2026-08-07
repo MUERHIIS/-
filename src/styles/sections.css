@@ -755,17 +755,17 @@
 }
 
 .work-tags span {
-  font-size: 28px;
-  letter-spacing: 0.06em;
+  font-size: 16px;
+  letter-spacing: 0.1em;
   color: var(--text-3);
   border: 1px solid var(--line);
-  padding: 10px 18px;
+  padding: 6px 12px;
 }
 
 .work-icon {
-  height: 48px;
+  height: 26px;
   width: auto;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 .works-grid {
