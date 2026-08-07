@@ -3,6 +3,7 @@ import Art from "./Art";
 import { ArrowUpRight } from "./Icons";
 import { allWorks, workCategories } from "../data";
 import MediaModal from "./MediaModal";
+import { getVideoSrc } from "../lib/video";
 
 const smoothstep = (a, b, x) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
@@ -220,7 +221,7 @@ export default function AllWorks() {
                 {playing === w.id && w.video ? (
                   <video
                     className="allworks-card-video"
-                    src={w.video}
+                    src={getVideoSrc(w)}
                     poster={w.image}
                     autoPlay
                     muted={muted}

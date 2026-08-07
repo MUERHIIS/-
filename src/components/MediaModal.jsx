@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { getVideoSrc } from "../lib/video";
 
 export default function MediaModal({ work, onClose }) {
+  const src = work.video ? getVideoSrc(work) : null;
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
@@ -18,7 +21,7 @@ export default function MediaModal({ work, onClose }) {
       <div className="video-modal-inner" onClick={(e) => e.stopPropagation()}>
         {work.video ? (
           <video
-            src={work.video}
+            src={src}
             preload="metadata"
             controls
             autoPlay
