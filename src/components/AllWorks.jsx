@@ -4,6 +4,7 @@ import { ArrowUpRight } from "./Icons";
 import { allWorks, workCategories } from "../data";
 import MediaModal from "./MediaModal";
 import { getWorkIcons, iconSrc } from "../lib/icons";
+import { assetUrl, lqipUrl } from "../lib/assets";
 
 const smoothstep = (a, b, x) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
@@ -218,6 +219,9 @@ export default function AllWorks() {
                 style={{
                   width: `min(46vw, 720px, ${((w.ratio.w / w.ratio.h) * 72).toFixed(2)}svh)`,
                   aspectRatio: `${w.ratio.w} / ${w.ratio.h}`,
+                  backgroundImage: `url(${lqipUrl(w.image)})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               >
                 {playing === w.id && w.bilibili ? (
@@ -241,10 +245,18 @@ export default function AllWorks() {
                 ) : w.image ? (
                   <img
                     className="allworks-card-img"
-                    src={w.image}
+                    src={assetUrl(w.image)}
                     alt={w.title}
                     loading="lazy"
                     decoding="async"
+                    data-fallback={w.image}
+                    onLoad={(e) => e.currentTarget.classList.add("is-loaded")}
+                    onError={(e) => {
+                      const t = e.currentTarget;
+                      if (t.dataset.fallback && t.src !== t.dataset.fallback) {
+                        t.src = t.dataset.fallback;
+                      }
+                    }}
                   />
                 ) : (
                   <Art kind={w.art} />
@@ -366,10 +378,18 @@ export default function AllWorks() {
                 {w.image ? (
                   <img
                     className="allworks-card-img"
-                    src={w.image}
+                    src={assetUrl(w.image)}
                     alt={w.title}
                     loading="lazy"
                     decoding="async"
+                    data-fallback={w.image}
+                    onLoad={(e) => e.currentTarget.classList.add("is-loaded")}
+                    onError={(e) => {
+                      const t = e.currentTarget;
+                      if (t.dataset.fallback && t.src !== t.dataset.fallback) {
+                        t.src = t.dataset.fallback;
+                      }
+                    }}
                   />
                 ) : (
                   <Art kind={w.art} />

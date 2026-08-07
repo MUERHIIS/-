@@ -6,6 +6,7 @@ import { works, allWorks } from "../data";
 import MediaModal from "./MediaModal";
 import BorderGlow from "./BorderGlow";
 import { getWorkIcons, iconSrc } from "../lib/icons";
+import { assetUrl, lqipUrl } from "../lib/assets";
 
 function WorkCard({ work, featured = false, onOpen }) {
   return (
@@ -13,6 +14,11 @@ function WorkCard({ work, featured = false, onOpen }) {
       <Reveal>
         <div
           className={`work-media ${onOpen ? "work-media--clickable" : ""}`}
+          style={{
+            backgroundImage: `url(${lqipUrl(work.image)})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
           onClick={onOpen}
           role={onOpen ? "button" : undefined}
           tabIndex={onOpen ? 0 : undefined}
@@ -26,10 +32,18 @@ function WorkCard({ work, featured = false, onOpen }) {
           {work.image ? (
             <img
               className="work-img"
-              src={work.image}
+              src={assetUrl(work.image)}
               alt={work.title}
               loading="lazy"
               decoding="async"
+              data-fallback={work.image}
+              onLoad={(e) => e.currentTarget.classList.add("is-loaded")}
+              onError={(e) => {
+                const t = e.currentTarget;
+                if (t.dataset.fallback && t.src !== t.dataset.fallback) {
+                  t.src = t.dataset.fallback;
+                }
+              }}
             />
           ) : (
             <Art kind={work.art} />

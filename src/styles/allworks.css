@@ -181,6 +181,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.allworks-card-img.is-loaded {
+  opacity: 1;
 }
 
 .allworks-card-video {
