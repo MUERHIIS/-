@@ -5,6 +5,7 @@ import { ArrowUpRight } from "./Icons";
 import { works, allWorks } from "../data";
 import MediaModal from "./MediaModal";
 import BorderGlow from "./BorderGlow";
+import { getWorkIcons, iconSrc } from "../lib/icons";
 
 function WorkCard({ work, featured = false, onOpen }) {
   return (
@@ -63,6 +64,14 @@ function WorkCard({ work, featured = false, onOpen }) {
             <div className="work-tags mono">
               {work.tags.map((t) => (
                 <span key={t}>{t}</span>
+              ))}
+              {getWorkIcons(work).map((ic) => (
+                <img
+                  className="work-icon"
+                  key={ic}
+                  src={iconSrc(ic)}
+                  alt={ic}
+                />
               ))}
             </div>
           </div>

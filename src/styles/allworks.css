@@ -356,6 +356,12 @@
   padding: 5px 10px;
 }
 
+.allworks-desc-icon {
+  height: 20px;
+  width: auto;
+  margin-left: 2px;
+}
+
 .allworks-footer {
   position: absolute;
   left: 50%;

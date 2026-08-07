@@ -741,6 +741,12 @@
   color: var(--text-3);
 }
 
+.work-icon {
+  height: 18px;
+  width: auto;
+  margin-left: 2px;
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

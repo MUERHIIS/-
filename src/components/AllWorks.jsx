@@ -4,6 +4,7 @@ import { ArrowUpRight } from "./Icons";
 import { allWorks, workCategories } from "../data";
 import MediaModal from "./MediaModal";
 import { getVideoSrc } from "../lib/video";
+import { getWorkIcons, iconSrc } from "../lib/icons";
 
 const smoothstep = (a, b, x) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
@@ -287,6 +288,14 @@ export default function AllWorks() {
                 {w.tags.map((t) => (
                   <span key={t}>{t}</span>
                 ))}
+                {getWorkIcons(w).map((ic) => (
+                  <img
+                    className="allworks-desc-icon"
+                    key={ic}
+                    src={iconSrc(ic)}
+                    alt={ic}
+                  />
+                ))}
               </div>
             </div>
           ))}
@@ -371,6 +380,14 @@ export default function AllWorks() {
                 <div className="allworks-desc-tags mono">
                   {w.tags.map((t) => (
                     <span key={t}>{t}</span>
+                  ))}
+                  {getWorkIcons(w).map((ic) => (
+                    <img
+                      className="allworks-desc-icon"
+                      key={ic}
+                      src={iconSrc(ic)}
+                      alt={ic}
+                    />
                   ))}
                 </div>
               </div>
