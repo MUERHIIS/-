@@ -39,8 +39,8 @@ src/
 - `images/` —— 平面设计作品原图
 - `posters/` —— 视频作品的封面帧
 
-作品顺序与介绍在 `src/data.js` 的 `allWorks`（全部作品，16 件）、`works`
-（精选，5 件）与 `workCategories`（四类分组）中维护。新增作品时：把素材放入
+作品顺序与介绍在 `src/data.js` 的 `allWorks`（全部作品，17 件）、`works`
+（精选，6 件）与 `workCategories`（四类分组）中维护。新增作品时：把素材放入
 `public/works/` 对应目录，在数组里追加一条记录（视频作品需提供 `image` 封面与
 `bilibili` 嵌入地址），并按分类把 `id` 加进 `workCategories` 对应分组。
 

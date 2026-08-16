@@ -80,8 +80,24 @@ export const experiences = [
 // ---------- 精选项目（对应简历的几件作品） ----------
 export const works = [
   {
-    id: "zhongmodi-ae",
+    id: "vector-breakthrough",
     index: "01",
+    title: "游戏活动 · 矢量突破 #1 无机物",
+    subtitle: "Blender 3D · AE 合成",
+    category: "主要作品",
+    role: "Blender / AE 合成",
+    duration: "00:14",
+    metrics: ["Blender 建模", "AE 合成", "活动主视觉"],
+    desc: "游戏活动主视觉作品：以 Blender 完成三维建模、材质与渲染，配合 Photoshop 完成贴图与平面处理，最后由 After Effects 合成包装。",
+    tags: ["Blender", "After Effects", "Photoshop", "三维"],
+    image: "/works/opt/vector-breakthrough.webp",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1bPb963Eae&page=1",
+    ratio: { w: 16, h: 9 },
+    featured: true,
+  },
+  {
+    id: "zhongmodi-ae",
+    index: "02",
     title: "终末地 · 游戏二创",
     subtitle: "AE 动效 · 游戏同人短片",
     category: "AE",
@@ -93,11 +109,10 @@ export const works = [
     image: "/works/opt/ae-zhongmodi.webp",
     bilibili: "//player.bilibili.com/player.html?bvid=BV1Nbub6JEkc&page=1",
     ratio: { w: 16, h: 9 },
-    featured: true,
   },
   {
     id: "design-qianmo",
-    index: "02",
+    index: "03",
     title: "缄默德克萨斯 · 视觉设计",
     subtitle: "PS 平面设计 · 角色视觉",
     category: "平面设计",
@@ -110,7 +125,7 @@ export const works = [
   },
   {
     id: "ae-yinqiu",
-    index: "03",
+    index: "04",
     title: "胤秋 · 诗词视频 AE 模板",
     subtitle: "商用模板 · 传统文化向",
     category: "AE",
@@ -125,7 +140,7 @@ export const works = [
   },
   {
     id: "clip-zglgj-1",
-    index: "04",
+    index: "05",
     title: "中国蓝国际 · 文化交流短片 01",
     subtitle: "浙江广电实习 · 拍摄与剪辑",
     category: "拍摄与剪辑",
@@ -140,7 +155,7 @@ export const works = [
   },
   {
     id: "clip-hengshanwu",
-    index: "05",
+    index: "06",
     title: "湖州安吉横山坞宣传片",
     subtitle: "宣传片 00后传统村落合伙人社会实践",
     category: "拍摄与剪辑",
@@ -158,8 +173,22 @@ export const works = [
 // ---------- 全部作品（17 件，按用户指定顺序 + 分类） ----------
 export const allWorks = [
   {
-    id: "zhongmodi-ae",
+    id: "vector-breakthrough",
     index: "01",
+    title: "游戏活动 · 矢量突破 #1 无机物",
+    subtitle: "Blender 3D · AE 合成",
+    category: "主要作品",
+    role: "Blender / AE 合成",
+    duration: "00:14",
+    desc: "游戏活动主视觉作品：以 Blender 完成三维建模、材质与渲染，配合 Photoshop 完成贴图与平面处理，最后由 After Effects 合成包装。",
+    tags: ["Blender", "After Effects", "Photoshop", "三维"],
+    image: "/works/opt/vector-breakthrough.webp",
+    bilibili: "//player.bilibili.com/player.html?bvid=BV1bPb963Eae&page=1",
+    ratio: { w: 16, h: 9 },
+  },
+  {
+    id: "zhongmodi-ae",
+    index: "02",
     title: "终末地 · 游戏二创",
     subtitle: "AE 动效 · 游戏同人短片",
     category: "AE",
@@ -173,7 +202,7 @@ export const allWorks = [
   },
   {
     id: "design-qianmo",
-    index: "02",
+    index: "03",
     title: "缄默德克萨斯 · 角色平面设计",
     subtitle: "PS 平面设计 · 角色视觉",
     category: "平面设计",
@@ -185,7 +214,7 @@ export const allWorks = [
   },
   {
     id: "design-shuangkanban",
-    index: "03",
+    index: "04",
     title: "游戏看板娘 · 角色平面设计",
     subtitle: "PS 平面设计 · 看板娘主题",
     category: "平面设计",
@@ -197,7 +226,7 @@ export const allWorks = [
   },
   {
     id: "design-amiya",
-    index: "04",
+    index: "05",
     title: "医疗阿米娅 · 角色平面设计",
     subtitle: "PS 平面设计 · 角色视觉",
     category: "平面设计",
@@ -209,7 +238,7 @@ export const allWorks = [
   },
   {
     id: "design-yanying",
-    index: "05",
+    index: "06",
     title: "焰影苇草 · 夏卉 · 角色平面设计",
     subtitle: "PS 平面设计 · 皮肤主题",
     category: "平面设计",
@@ -221,7 +250,7 @@ export const allWorks = [
   },
   {
     id: "ae-dongman-pv",
-    index: "06",
+    index: "07",
     title: "动漫 PV 练习",
     subtitle: "AE 动画 · 卡点节奏",
     category: "AE",
@@ -235,7 +264,7 @@ export const allWorks = [
   },
   {
     id: "ae-yinqiu",
-    index: "07",
+    index: "08",
     title: "胤秋 · 诗词视频 AE 模板",
     subtitle: "商用模板 · 传统文化向",
     category: "AE",
@@ -249,7 +278,7 @@ export const allWorks = [
   },
   {
     id: "ae-xuerong",
-    index: "08",
+    index: "09",
     title: "微电影《雪融之时》宣传片",
     subtitle: "AE 包装 · 宣传片",
     category: "AE",
@@ -263,7 +292,7 @@ export const allWorks = [
   },
   {
     id: "ae-c5-dianjing",
-    index: "09",
+    index: "10",
     title: "C5 大神电竞 · 高校赛宣传片",
     subtitle: "AE 动效 · 赛事宣传",
     category: "AE",
@@ -277,7 +306,7 @@ export const allWorks = [
   },
   {
     id: "design-zhongmodi-1",
-    index: "10",
+    index: "11",
     title: "终末地 · 角色二创（诀）01",
     subtitle: "平面设计 · 角色海报",
     category: "平面设计",
@@ -289,7 +318,7 @@ export const allWorks = [
   },
   {
     id: "design-zhongmodi-2",
-    index: "11",
+    index: "12",
     title: "终末地 · 角色二创（诀）02",
     subtitle: "平面设计 · 角色海报",
     category: "平面设计",
@@ -301,7 +330,7 @@ export const allWorks = [
   },
   {
     id: "clip-zglgj-1",
-    index: "12",
+    index: "13",
     title: "中国蓝国际 · 文化交流短片 01",
     subtitle: "浙江广电实习 · 拍摄与剪辑",
     category: "拍摄与剪辑",
@@ -315,7 +344,7 @@ export const allWorks = [
   },
   {
     id: "clip-zglgj-2",
-    index: "13",
+    index: "14",
     title: "中国蓝国际 · 文化交流短片 02",
     subtitle: "浙江广电实习 · 拍摄与剪辑",
     category: "拍摄与剪辑",
@@ -329,7 +358,7 @@ export const allWorks = [
   },
   {
     id: "clip-zglgj-3",
-    index: "14",
+    index: "15",
     title: "中国蓝国际 · 文化交流短片 03",
     subtitle: "浙江广电实习 · 拍摄与剪辑",
     category: "拍摄与剪辑",
@@ -343,7 +372,7 @@ export const allWorks = [
   },
   {
     id: "clip-hengshanwu",
-    index: "15",
+    index: "16",
     title: "湖州安吉横山坞宣传片",
     subtitle: "宣传片 00后传统村落合伙人社会实践",
     category: "拍摄与剪辑",
@@ -357,7 +386,7 @@ export const allWorks = [
   },
   {
     id: "clip-baziqiao",
-    index: "16",
+    index: "17",
     title: "绍兴八字桥人物采访",
     subtitle: "采访 00后传统村落合伙人社会实践",
     category: "拍摄与剪辑",
@@ -375,7 +404,12 @@ export const workCategories = [
   {
     id: "main",
     label: "主要作品",
-    ids: ["zhongmodi-ae", "design-qianmo", "design-shuangkanban"],
+    ids: [
+      "vector-breakthrough",
+      "zhongmodi-ae",
+      "design-qianmo",
+      "design-shuangkanban",
+    ],
   },
   {
     id: "graphic",
