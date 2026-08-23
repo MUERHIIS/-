@@ -1,6 +1,6 @@
 export const profile = {
   name: "MUERHIIS",
-  title: "视觉设计 / 后期制作",
+  title: "视频设计 / 后期制作",
   city: "杭州/上海",
   phone: "17826826676",
   email: "z126117909@163.com",
@@ -487,6 +487,6 @@ export const awards = [
 
 export const stats = [
   { value: "3600W+", label: "单条视频累计播放量" },
-  { value: "多段", label: "一线公司实习" },
+  { value: "多段", label: "实习经历" },
   { value: "10+", label: "品牌视频交付" },
 ];

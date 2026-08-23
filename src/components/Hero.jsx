@@ -27,7 +27,7 @@ export default function Hero({ ready = false }) {
           <div className="hero-subrow hero-fade">
             <span className="hero-sub-name">MUERHIIS</span>
             <i className="hero-sub-sep" aria-hidden="true" />
-            <span className="hero-sub-title">后期制作（动效包装）· 视觉设计</span>
+            <span className="hero-sub-title">视频设计· 后期制作</span>
           </div>
 
           <p className="hero-desc hero-fade">

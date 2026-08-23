@@ -16,7 +16,7 @@ export default function About() {
     { value: "800W+", label: "单条视频24H峰值播放量" },
     { value: "5 家", label: "头部金融客户" },
     { value: "10+", label: "品牌成片交付" },
-    { value: "多段", label: "一线公司实习" },
+    { value: "多段", label: "实习经历" },
     { value: "2/52", label: "专业排名" },
   ];
 
@@ -118,7 +118,7 @@ export default function About() {
             <Reveal delay={120}>
               <div className="about-note">
                 <div className="about-note-text">
-                  <p>正在寻找后期制作/视觉设计方向的秋招岗位。</p>
+                  <p>正在寻找视频设计方向的秋招岗位。</p>
                   <p>
                     B站深度用户，对游戏（二游PV、平面设计、二创MAD）、科技（PC、相机）感兴趣，ACG线上线下爱好者。
                   </p>
