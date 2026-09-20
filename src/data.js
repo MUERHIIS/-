@@ -273,7 +273,7 @@ export const allWorks = [
     desc: "对应简历中的胤秋商用模板项目：3D 羊皮卷轴动画 + 分形杂色水墨晕染。",
     tags: ["After Effects", "Element 3D", "水墨"],
     image: "/works/opt/ae-yinqiu.webp",
-    video: "https://video.muerhiis.cn/AE-%E3%80%8A%E8%83%A4%E7%A7%8B%E3%80%8B%E8%AF%97%E8%AF%8D%E8%A7%86%E9%A2%91AE%E6%A8%A1%E6%9D%BF%E7%AE%80%E7%95%A5%E7%89%88.mp41",
+    video: "https://video.muerhiis.cn/AE-%E3%80%8A%E8%83%A4%E7%A7%8B%E3%80%8B%E8%AF%97%E8%AF%8D%E8%A7%86%E9%A2%91AE%E6%A8%A1%E6%9D%BF%E7%AE%80%E7%95%A5%E7%89%88.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
