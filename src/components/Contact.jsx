@@ -64,6 +64,26 @@ export default function Contact() {
             回到顶部 <ArrowUp />
           </a>
         </div>
+        <div className="container contact-beian">
+          <a
+            className="beian-item"
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/works/icons/beian.png" alt="" aria-hidden="true" />
+            <span>浙ICP备2026069374号-1</span>
+          </a>
+          <a
+            className="beian-item"
+            href="https://beian.mps.gov.cn/#/query/webSearch?code=33019202003279"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/works/icons/beian.png" alt="" aria-hidden="true" />
+            <span>浙公网安备33019202003279号</span>
+          </a>
+        </div>
       </footer>
     </section>
   );
