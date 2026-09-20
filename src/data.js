@@ -259,7 +259,7 @@ export const allWorks = [
     desc: "AE 动画节奏练习：镜头转场、音乐卡点与动效包装的 PV 风格短片。",
     tags: ["After Effects", "动画", "卡点剪辑"],
     image: "/works/opt/ae-dongman-pv.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1sbub6EE7n&page=1",
+    video: "https://video.muerhiis.cn/AE-%E5%8A%A8%E6%BC%ABPV%E7%BB%83%E4%B9%A0-%E5%B7%B2%E5%8E%8B%E7%BC%A970.mp4",
     ratio: { w: 35, h: 18 },
   },
   {
@@ -273,7 +273,7 @@ export const allWorks = [
     desc: "对应简历中的胤秋商用模板项目：3D 羊皮卷轴动画 + 分形杂色水墨晕染。",
     tags: ["After Effects", "Element 3D", "水墨"],
     image: "/works/opt/ae-yinqiu.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEWT&page=1",
+    video: "https://video.muerhiis.cn/AE-%E3%80%8A%E8%83%A4%E7%A7%8B%E3%80%8B%E8%AF%97%E8%AF%8D%E8%A7%86%E9%A2%91AE%E6%A8%A1%E6%9D%BF%E7%AE%80%E7%95%A5%E7%89%88.mp41",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -287,7 +287,7 @@ export const allWorks = [
     desc: "微电影《雪融之时》宣传片，负责动效包装与后期剪辑。",
     tags: ["After Effects", "宣传片", "包装"],
     image: "/works/opt/ae-xuerong.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SExJ&page=1",
+    video: "https://video.muerhiis.cn/AE-%E5%BE%AE%E7%94%B5%E5%BD%B1%E3%80%8A%E9%9B%AA%E8%9E%8D%E4%B9%8B%E6%97%B6%E3%80%8B%E5%AE%A3%E4%BC%A0%E7%89%87.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -301,7 +301,7 @@ export const allWorks = [
     desc: "C5 大神电竞杭州高校赛宣传片，负责动效设计与成片剪辑。",
     tags: ["After Effects", "电竞", "宣传片"],
     image: "/works/opt/ae-c5-dianjing.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEs5&page=1",
+    video: "https://video.muerhiis.cn/AE-C5%E5%A4%A7%E7%A5%9E%E7%94%B5%E7%AB%9E%E6%9D%AD%E5%B7%9E%E9%AB%98%E6%A0%A1%E8%B5%9B%E5%AE%A3%E4%BC%A0%E7%89%87.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -339,7 +339,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/opt/clip-zglgj-1.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1w9ut6VEpM&page=1",
+    video: "https://video.muerhiis.cn/%E6%8B%8D%E6%91%84%E4%B8%8E%E5%89%AA%E8%BE%91-%E4%B8%AD%E5%9B%BD%E8%93%9D%E5%9B%BD%E9%99%851-%E6%B5%99%E6%B1%9F%E5%B9%BF%E7%94%B5.mp4",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -353,7 +353,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/opt/clip-zglgj-2.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1zZut6zEB5&page=1",
+    video: "https://video.muerhiis.cn/%E6%8B%8D%E6%91%84%E4%B8%8E%E5%89%AA%E8%BE%91-%E4%B8%AD%E5%9B%BD%E8%93%9D%E5%9B%BD%E9%99%852-%E6%B5%99%E6%B1%9F%E5%B9%BF%E7%94%B5.mp4",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -367,7 +367,7 @@ export const allWorks = [
     desc: "对应简历中的浙江广电实习：文化交流项目成片，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/opt/clip-zglgj-3.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1JZut66EvS&page=1",
+    video: "https://video.muerhiis.cn/%E6%8B%8D%E6%91%84%E4%B8%8E%E5%89%AA%E8%BE%91-%E4%B8%AD%E5%9B%BD%E8%93%9D%E5%9B%BD%E9%99%853-%E6%B5%99%E6%B1%9F%E5%B9%BF%E7%94%B5.mp4",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -381,7 +381,7 @@ export const allWorks = [
     desc: "湖州安吉横山坞宣传片，负责从拍摄到成片的全流程制作。",
     tags: ["拍摄", "Premiere", "宣传片"],
     image: "/works/opt/clip-hengshanwu.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6VEYq&page=1",
+    video: "https://video.muerhiis.cn/%E5%AE%89%E5%90%89-%E5%8E%8B%E7%BC%A9.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -395,7 +395,7 @@ export const allWorks = [
     desc: "绍兴八字桥人物采访，负责采访拍摄与成片剪辑。",
     tags: ["拍摄", "Premiere", "采访"],
     image: "/works/opt/clip-baziqiao.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6GET2&page=1",
+    video: "https://video.muerhiis.cn/%E5%85%AB%E5%AD%97%E6%A1%A5-%E5%8E%8B%E7%BC%A9.mp4",
     ratio: { w: 16, h: 9 },
   },
 ];
