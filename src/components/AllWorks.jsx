@@ -93,7 +93,7 @@ export default function AllWorks() {
         setMuted(true);
         const w = works[idx];
         const landscape = w.ratio && w.ratio.w / w.ratio.h >= 1.4;
-        setPlaying(w.bilibili && landscape ? w.id : null);
+        setPlaying((w.bilibili || w.video) && landscape ? w.id : null);
       } else if (frontFocus < 0.4 && lastPlay === idx) {
         lastPlay = -1;
         setPlaying(null);
