@@ -107,7 +107,7 @@ export const works = [
     desc: "使用 After Effects 完成动效设计与后期合成，围绕《明日方舟：终末地》世界观创作的游戏同人短片，节奏卡点与视觉冲击并重。",
     tags: ["After Effects", "游戏二创", "动效"],
     image: "/works/opt/ae-zhongmodi.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1Nbub6JEkc&page=1",
+    video: "https://video.muerhiis.cn/AE-%E7%BB%88%E6%9C%AB%E5%9C%B0%E6%B8%B8%E6%88%8F%E4%BA%8C%E5%88%9B.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -197,7 +197,7 @@ export const allWorks = [
     desc: "使用 After Effects 完成动效设计与后期合成，围绕《终末地》世界观创作的游戏同人短片。",
     tags: ["After Effects", "游戏二创", "动效"],
     image: "/works/opt/ae-zhongmodi.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1Nbub6JEkc&page=1",
+    video: "https://video.muerhiis.cn/AE-%E7%BB%88%E6%9C%AB%E5%9C%B0%E6%B8%B8%E6%88%8F%E4%BA%8C%E5%88%9B.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
