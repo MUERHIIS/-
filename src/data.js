@@ -183,7 +183,7 @@ export const allWorks = [
     desc: "游戏活动主视觉作品：以 Blender 完成三维建模、材质与渲染，配合 Photoshop 完成贴图与平面处理，最后由 After Effects 合成包装。",
     tags: ["Blender", "After Effects", "Photoshop", "三维"],
     image: "/works/opt/vector-breakthrough.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1bPb963Eae&page=1",
+    video: "https://video.muerhiis.cn/%E3%80%90blender%2BAE%E3%80%91%E4%BB%BF%20%E6%B8%B8%E6%88%8F%E6%B4%BB%E5%8A%A8-%E7%9F%A2%E9%87%8F%E7%AA%81%E7%A0%B4%231.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
