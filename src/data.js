@@ -135,7 +135,7 @@ export const works = [
     desc: "对应简历中的胤秋商用模板项目：VideoCopilot Element 建模渲染羊皮卷轴 3D 动画，分形杂色模拟水墨晕染效果。",
     tags: ["After Effects", "Element 3D", "水墨"],
     image: "/works/opt/ae-yinqiu.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1x4ub6SEWT&page=1",
+    video: "https://video.muerhiis.cn/AE-%E3%80%8A%E8%83%A4%E7%A7%8B%E3%80%8B%E8%AF%97%E8%AF%8D%E8%A7%86%E9%A2%91AE%E6%A8%A1%E6%9D%BF%E7%AE%80%E7%95%A5%E7%89%88.mp4",
     ratio: { w: 16, h: 9 },
   },
   {
@@ -150,7 +150,7 @@ export const works = [
     desc: "对应简历中的浙江广电实习：参与“文明探源·和合共生”文化交流项目，负责视频拍摄与后期剪辑合成。",
     tags: ["拍摄", "Premiere", "After Effects"],
     image: "/works/opt/clip-zglgj-1.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1w9ut6VEpM&page=1",
+    video: "https://video.muerhiis.cn/%E6%8B%8D%E6%91%84%E4%B8%8E%E5%89%AA%E8%BE%91-%E4%B8%AD%E5%9B%BD%E8%93%9D%E5%9B%BD%E9%99%851-%E6%B5%99%E6%B1%9F%E5%B9%BF%E7%94%B5.mp4",
     ratio: { w: 9, h: 16 },
   },
   {
@@ -165,7 +165,7 @@ export const works = [
     desc: "湖州安吉横山坞宣传片，负责从拍摄到成片的全流程制作。",
     tags: ["拍摄", "Premiere", "宣传片"],
     image: "/works/opt/clip-hengshanwu.webp",
-    bilibili: "//player.bilibili.com/player.html?bvid=BV1k9ut6VEYq&page=1",
+    video: "https://video.muerhiis.cn/%E5%AE%89%E5%90%89-%E5%8E%8B%E7%BC%A9.mp4",
     ratio: { w: 16, h: 9 },
   },
 ];
