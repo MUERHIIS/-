@@ -13,6 +13,10 @@ const smoothstep = (a, b, x) => {
 
 // 只有短片才在轨道中央自动播放，避免大文件在浏览时消耗流量
 const AUTOPLAY_MAX_SECONDS = 60;
+// 卡片在中央稳定停留多久后才开始播放（避免刚滑进区域就立刻播放）
+const AUTOPLAY_DELAY_MS = 700;
+// 需要多接近正中央才允许播放（0-1，越大越严格）
+const AUTOPLAY_CENTER_FOCUS = 0.9;
 
 const durationToSeconds = (d) => {
   if (!d) return Infinity;
@@ -28,6 +32,9 @@ export default function AllWorks() {
   const counterRef = useRef(null);
   const smoothRef = useRef(0);
   const runningRef = useRef(false);
+  const playingIdRef = useRef(null);
+  const armRef = useRef({ idx: -1, since: 0 });
+  const endedRef = useRef(null);
   const [cat, setCat] = useState("main");
   const [current, setCurrent] = useState(0);
   const [active, setActive] = useState(null);
@@ -72,7 +79,6 @@ export default function AllWorks() {
     const tilt = -9 * DEG;
     let raf = 0;
     let lastIdx = -1;
-    let lastPlay = -1;
 
     const update = () => {
       if (runningRef.current) raf = requestAnimationFrame(update);
@@ -107,16 +113,37 @@ export default function AllWorks() {
       const aCur = (idx / N) * TAU + Math.PI / (2 * N) - p * TAU;
       const frontFocus = Math.pow(Math.max(0, Math.cos(aCur)), 2);
 
-      if (frontFocus > 0.85 && lastPlay !== idx) {
-        lastPlay = idx;
-        setMuted(true);
-        const w = works[idx];
-        const landscape = w.ratio && w.ratio.w / w.ratio.h >= 1.4;
-        const short = durationToSeconds(w.duration) <= AUTOPLAY_MAX_SECONDS;
-        setPlaying((w.bilibili || w.video) && landscape && short ? w.id : null);
-      } else if (frontFocus < 0.4 && lastPlay === idx) {
-        lastPlay = -1;
+      const w = works[idx];
+      const landscape = w.ratio && w.ratio.w / w.ratio.h >= 1.4;
+      const short = durationToSeconds(w.duration) <= AUTOPLAY_MAX_SECONDS;
+      const playable = (w.bilibili || w.video) && landscape && short;
+      const atCenter = frontFocus > AUTOPLAY_CENTER_FOCUS;
+
+      // 切到别的作品时，停掉上一件正在播放的
+      if (playingIdRef.current && playingIdRef.current !== w.id) {
+        playingIdRef.current = null;
         setPlaying(null);
+      }
+
+      if (playable && atCenter && endedRef.current !== w.id) {
+        if (armRef.current.idx !== idx) {
+          armRef.current = { idx, since: performance.now() };
+        } else if (
+          !playingIdRef.current &&
+          performance.now() - armRef.current.since >= AUTOPLAY_DELAY_MS
+        ) {
+          playingIdRef.current = w.id;
+          setMuted(true);
+          setPlaying(w.id);
+        }
+      } else {
+        armRef.current = { idx: -1, since: 0 };
+        if (playingIdRef.current === w.id) {
+          playingIdRef.current = null;
+          setPlaying(null);
+        }
+        // 离开中央后解除“已播完”锁定，下次再滚到中央可以重新播放
+        if (!atCenter && endedRef.current === w.id) endedRef.current = null;
       }
 
       cards.forEach((card, i) => {
@@ -262,8 +289,12 @@ export default function AllWorks() {
                     preload="metadata"
                     autoPlay
                     muted={muted}
-                    loop
                     playsInline
+                    onEnded={() => {
+                      endedRef.current = w.id;
+                      playingIdRef.current = null;
+                      setPlaying(null);
+                    }}
                   />
                 ) : w.image ? (
                   <img
