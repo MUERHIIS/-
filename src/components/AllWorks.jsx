@@ -11,6 +11,16 @@ const smoothstep = (a, b, x) => {
   return t * t * (3 - 2 * t);
 };
 
+// 只有短片才在轨道中央自动播放，避免大文件在浏览时消耗流量
+const AUTOPLAY_MAX_SECONDS = 60;
+
+const durationToSeconds = (d) => {
+  if (!d) return Infinity;
+  const parts = String(d).split(":").map(Number);
+  if (parts.some((n) => Number.isNaN(n))) return Infinity;
+  return parts.reduce((acc, v) => acc * 60 + v, 0);
+};
+
 export default function AllWorks() {
   const sectionRef = useRef(null);
   const stageRef = useRef(null);
@@ -35,6 +45,15 @@ export default function AllWorks() {
     sync();
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  // 切到后台标签页时停止轨道视频，避免继续缓冲
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.hidden) setPlaying(null);
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
   }, []);
 
   useEffect(() => {
@@ -93,7 +112,8 @@ export default function AllWorks() {
         setMuted(true);
         const w = works[idx];
         const landscape = w.ratio && w.ratio.w / w.ratio.h >= 1.4;
-        setPlaying((w.bilibili || w.video) && landscape ? w.id : null);
+        const short = durationToSeconds(w.duration) <= AUTOPLAY_MAX_SECONDS;
+        setPlaying((w.bilibili || w.video) && landscape && short ? w.id : null);
       } else if (frontFocus < 0.4 && lastPlay === idx) {
         lastPlay = -1;
         setPlaying(null);
@@ -127,6 +147,8 @@ export default function AllWorks() {
         } else if (!entry.isIntersecting && runningRef.current) {
           runningRef.current = false;
           cancelAnimationFrame(raf);
+          // 离开视口立即停止播放，避免后台继续缓冲消耗流量
+          setPlaying(null);
         }
       },
       { rootMargin: "150% 0px" }
@@ -237,6 +259,7 @@ export default function AllWorks() {
                     className="allworks-card-video"
                     src={w.video}
                     poster={w.image}
+                    preload="metadata"
                     autoPlay
                     muted={muted}
                     loop

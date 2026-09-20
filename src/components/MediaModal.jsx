@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function MediaModal({ work, onClose }) {
+  const videoRef = useRef(null);
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
@@ -12,6 +14,15 @@ export default function MediaModal({ work, onClose }) {
       document.body.style.overflow = "";
     };
   }, [onClose]);
+
+  // 切到后台标签页时暂停视频，避免继续缓冲
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.hidden && videoRef.current) videoRef.current.pause();
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
+  }, []);
 
   return (
     <div className="video-modal" onClick={onClose} role="dialog" aria-modal="true">
@@ -28,6 +39,7 @@ export default function MediaModal({ work, onClose }) {
           </div>
         ) : work.video ? (
           <video
+            ref={videoRef}
             src={work.video}
             preload="metadata"
             controls
