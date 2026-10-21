@@ -118,7 +118,7 @@ export default function About() {
             <Reveal delay={120}>
               <div className="about-note">
                 <div className="about-note-text">
-                  <p>正在寻找视频设计方向的秋招岗位。</p>
+                  <p>正在寻找视频设计/后期制作/新媒体运营（市场品牌）方向的岗位。</p>
                   <p>
                     B站深度用户，对游戏（二游PV、平面设计、二创MAD）、科技（PC、相机）感兴趣，ACG线上线下爱好者。
                   </p>

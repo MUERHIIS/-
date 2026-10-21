@@ -30,7 +30,7 @@ export default function Contact() {
 
         <Reveal delay={220}>
           <p className="contact-sub">
-            正在寻找后期制作 / AIGC / 视觉设计方向的实习与秋招机会，
+            正在寻找视频设计/后期制作/新媒体运营（市场品牌）的岗位机会，
             <br />
             期待与你的团队一起做出好内容。
           </p>
