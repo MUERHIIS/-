@@ -4,7 +4,7 @@ import { ArrowUpRight } from "./Icons";
 const links = [
   { id: "about", label: "关于" },
   { id: "allworks", label: "全部作品" },
-  { id: "works", label: "精选" },
+  { id: "works", label: "精选项目" },
   { id: "experience", label: "实习经历" },
   { id: "strengths", label: "优势" },
   { id: "contact", label: "联系" },
